@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mitr:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Yago Pazos</title>
+  </head>
+  <body>
+    <div class="flex flex-col">
+      <nav
+        class="flex nav justify-between bg-white p-4 md:p-6 lg:p-6 items-center"
+      >
+        <h4
+          class="logo text-xl md:text-3xl lg:text-3xl pl-2 md:pl-6 lg:pl-8 xl:pl-12 2xl:pl-20 font-medium"
+        >
+          Yago Pazos
+        </h4>
+        <div
+          class="flex align-middle gap-4 md:gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 pr-2 md:pr-6 lg:pr-8 xl:pr-12 2xl:pr-20"
+        >
+          <a class="navlinks nav-item" href="/Portfol/"> home </a>
+          <a class="navlinks nav-item" href="#about"> about </a>
+          <a class="navlinks nav-item" href="#projects"> projects </a>
+          <a class="navlinks nav-item" href="#contact"> contact </a>
+        </div>
+      </nav>
+      <section
+        class="w-full about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 pt-12 md:p-20 lg:p-40 xl:px-80 2xl:px-96 justify-center"
+      >
+        <div
+          class="flex flex-col-reverse md:flex-row lg:flex-row gap-2 md:gap-0 lg:gap-0"
+        >
+          <div class="md:w-1/2 lg:1/2 flex flex-col justify-center">
+            <div class="">
+              <h1
+                class="text-black navlinks text-5xl text-center md:text-left lg:text-left"
+              >
+                Full-Stack Web Developer
+              </h1>
+            </div>
+            <br />
+            <div class="">
+              <p
+                class="text-black h3 text-lg text-center md:text-left lg:text-left"
+              >
+                Greetings, I'm Yago, a web developer based in Berlin, committed
+                to deliver high-quality websites.
+              </p>
+            </div>
+            <br />
+          </div>
+          <br />
+          <div class="w-full md:w-1/2 lg:1/2 flex items-center justify-center">
+            <img
+              class="object-cover size-1/2 md:size-3/4 lg:size-72 rounded-lg"
+              src="{foto}"
+              alt="Yago´s Photo"
+            />
+            <br />
+          </div>
+        </div>
+        <br />
+        <div
+          class="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start"
+        >
+          <div class="flex gap-4 lg:gap-8 md:gap-8">
+            <img class="ts-icons" src="{html}" alt="HTML" />
+            <img class="ts-icons" src="{css}" alt="CSS" />
+          </div>
+          <div class="flex gap-4 lg:gap-8 md:gap-8">
+            <img class="ts-icons" src="{JS}" alt="JavaScript" />
+            <img class="ts-icons" src="{react}" alt="React" />
+          </div>
+          <div class="flex gap-4 lg:gap-8 md:gap-8">
+            <img class="ts-icons" src="{node}" alt="Node" />
+            <img class="ts-icons" src="{express}" alt="Express" />
+          </div>
+          <div class="flex gap-4 lg:gap-8 md:gap-8">
+            <img class="ts-icons" src="{tailwind}" alt="Tailwind" />
+            <img class="ts-icons" src="{mysql}" alt="MySQL" />
+          </div>
+        </div>
+      </section>
+      <br />
+      <section
+        id="about"
+        class="bg-white flex flex-col md:flex-row lg:flex-row p-12 lg:p-40 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full"
+      >
+        <div class="flex flex-col justify-center">
+          <h5
+            class="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left"
+          >
+            About
+          </h5>
+          <br />
+          <h5
+            class="text-black h3 text-lg text-xl pt-4 text-center md:text-left lg:text-left"
+          >
+            Full-Stack Developer based in Berlin
+          </h5>
+          <br />
+          <p class="text-black h3 pt-4 text-center md:text-left lg:text-left">
+            Hey, my name is Yago, and I'm a Full-Stack Developer. My passion is
+            to create and develop a clean UI/UX for my users.
+          </p>
+        </div>
+        <div class="border-b-2 pt-28 border-black"></div>
+        <div
+          class="my-16 md:my-0 lg:my-0 mx-0 md:mx-12 lg:mx-32 divider2 rounded-lg"
+        ></div>
+        <div
+          class="flex items-center justify-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0"
+        >
+          <img
+            class="object-cover rounded-lg"
+            src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
+            alt=""
+          />
+        </div>
+      </section>
+      <section
+        id="projects"
+        class="w-full py-40 about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 md:p-20 lg:p-40 xl:px-80 2xl:px-96 justify-center"
+      >
+        <div>
+          <h5
+            class="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left"
+          >
+            Project´s
+          </h5>
+        </div>
+        <div class="flex items-center justify-center py-8 md:py-32 lg:py-32">
+          <h4
+            class="py-20 text-end flex h3 text-4xl items-center justify-center"
+          >
+            Work in progress
+          </h4>
+          <div class="ellipsis flex items-center justify-center pl-2">
+            <div class="dot">.</div>
+            <div class="dot">.</div>
+            <div class="dot">.</div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="contact"
+        class="bg-white flex flex-col p-12 lg:p-40 md:px-20 xl:px-80 2xl:px-96 w-full"
+      >
+        <h5
+          class="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left"
+        >
+          Contact
+        </h5>
+        <div class="flex flex-col">
+          <h4
+            class="pt-20 pl-0 md:pl-8 lg:pl-8 xl:pl-8 2xl:pl-8 text-black h3 text-md pt-4 text-center md:text-left lg:text-left"
+          >
+            I'd love to hear from you!
+          </h4>
+          <div
+            class="flex py-20 flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-6 md:gap-12 lg:gap-20 xl:gap-32 2xl:gap-96"
+          >
+            <div class="flex gap-8 justify-center">
+              <div
+                class="flex pl-0 md:px-20 lg:px-32 gap-6 flex-row items-center"
+              >
+                <img class="ts-icons" src="{gmail}" alt="E-mail" />
+                <div>
+                  <h6 class="text-black h3 text-md pt-4 text-left">Location</h6>
+                  <p class="text-black h3 text-md pt-4 text-left">
+                    Berlin, Germany
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-8 justify-center">
+              <div class="flex gap-6 flex-row items-center">
+                <img class="ts-icons" src="{pin}" alt="Location" />
+                <div>
+                  <h6 class="text-black h3 text-md pt-4 text-left">Mail</h6>
+                  <p class="text-black h3 text-md pt-4 text-left">
+                    yagopb@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="bg-black flex flex-col-reverse md:flex-row lg:flex-row justify-between p-12 lg:px-48 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full"
+      >
+        <h4
+          class="text-white h3 text-md pt-4 text-center md:text-left lg:text-left"
+        >
+          Copyright © 2024. All rights are reserved
+        </h4>
+        <div class="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
+          <a href="http://www.linkedin.com/in/yagopb">
+            <img class="ts-icons" src="{link}" alt="" />
+          </a>
+          <a href="http://github.com/Pletus">
+            <img class="ts-icons" src="{git}" alt="github" />
+          </a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
