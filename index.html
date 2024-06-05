@@ -26,7 +26,7 @@
         <div
           class="flex align-middle gap-4 md:gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 pr-2 md:pr-6 lg:pr-8 xl:pr-12 2xl:pr-20"
         >
-          <a class="navlinks nav-item" href="/Portfol/"> home </a>
+          <a class="navlinks nav-item" href="/"> home </a>
           <a class="navlinks nav-item" href="#about"> about </a>
           <a class="navlinks nav-item" href="#projects"> projects </a>
           <a class="navlinks nav-item" href="#contact"> contact </a>
@@ -72,20 +72,48 @@
           class="flex flex-wrap gap-4 lg:gap-8 md:gap-8 pl-0 md:pl-4 lg:pl-4 pt-2 md:pt-4 lg:pt-4 justify-center lg:justify-start md:justify-start"
         >
           <div class="flex gap-4 lg:gap-8 md:gap-8">
-            <img class="ts-icons" src="{html}" alt="HTML" />
-            <img class="ts-icons" src="{css}" alt="CSS" />
+            <img
+              class="ts-icons hover:"
+              src="./assets/icons/html-5-svgrepo-com.svg"
+              alt="HTML"
+            />
+            <img
+              class="ts-icons"
+              src="./assets/icons/css-3-svgrepo-com.svg"
+              alt="CSS"
+            />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
-            <img class="ts-icons" src="{JS}" alt="JavaScript" />
-            <img class="ts-icons" src="{react}" alt="React" />
+            <img
+              class="ts-icons"
+              src="./assets/icons/javascript-svgrepo-com.svg"
+              alt="JavaScript"
+            />
+            <img
+              class="ts-icons"
+              src="./assets/icons/react-svgrepo-com.svg"
+              alt="React"
+            />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
-            <img class="ts-icons" src="{node}" alt="Node" />
-            <img class="ts-icons" src="{express}" alt="Express" />
+            <img class="ts-icons" src="./assets/icons/Node.js.svg" alt="Node" />
+            <img
+              class="ts-icons"
+              src="./assets/icons/Express.svg"
+              alt="Express"
+            />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
-            <img class="ts-icons" src="{tailwind}" alt="Tailwind" />
-            <img class="ts-icons" src="{mysql}" alt="MySQL" />
+            <img
+              class="ts-icons"
+              src="./assets/icons/tailwind-svgrepo-com.svg"
+              alt="Tailwind"
+            />
+            <img
+              class="ts-icons"
+              src="./assets/icons/mongodb-svgrepo-com.svg"
+              alt="MongoDB"
+            />
           </div>
         </div>
       </section>
@@ -94,7 +122,7 @@
         id="about"
         class="bg-white flex flex-col md:flex-row lg:flex-row p-12 lg:p-40 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full"
       >
-        <div class="flex flex-col justify-center">
+        <div class="flex flex-col justify-center md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
           <h5
             class="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left"
           >
@@ -109,7 +137,10 @@
           <br />
           <p class="text-black h3 pt-4 text-center md:text-left lg:text-left">
             Hey, my name is Yago, and I'm a Full-Stack Developer. My passion is
-            to create and develop a clean UI/UX for my users.
+            to create and develop clean UI/UX designs for my users. Before
+            transitioning into tech, I had a background as a professional cook,
+            where I honed my attention to detail and creativity. This experience
+            also enhanced my teamwork and time management skills.
           </p>
         </div>
         <div class="border-b-2 pt-28 border-black"></div>
@@ -117,13 +148,19 @@
           class="my-16 md:my-0 lg:my-0 mx-0 md:mx-12 lg:mx-32 divider2 rounded-lg"
         ></div>
         <div
-          class="flex items-center justify-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0"
+          class="flex items-center pb-28 md:pb-0 lg:pb-0 xl:pb-0 2xl:pb-0 md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2 relative img"
         >
           <img
-            class="object-cover rounded-lg"
+            class="rounded-lg"
             src="https://images.unsplash.com/photo-1522252234503-e356532cafd5?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZGV2ZWxvcGVyfGVufDB8fDB8fHww"
             alt=""
           />
+          <img
+            class="absolute h-32 w-32 -left-12 circular-image"
+            src="./assets/imgs/tortilla-espanola.png"
+            alt=""
+          />
+          <img />
         </div>
       </section>
       <section
@@ -143,11 +180,6 @@
           >
             Work in progress
           </h4>
-          <div class="ellipsis flex items-center justify-center pl-2">
-            <div class="dot">.</div>
-            <div class="dot">.</div>
-            <div class="dot">.</div>
-          </div>
         </div>
       </section>
       <section
@@ -159,39 +191,59 @@
         >
           Contact
         </h5>
+        <br />
         <div class="flex flex-col">
           <h4
             class="pt-20 pl-0 md:pl-8 lg:pl-8 xl:pl-8 2xl:pl-8 text-black h3 text-md pt-4 text-center md:text-left lg:text-left"
           >
             I'd love to hear from you!
           </h4>
-          <div
-            class="flex py-20 flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-center gap-6 md:gap-12 lg:gap-20 xl:gap-32 2xl:gap-96"
-          >
-            <div class="flex gap-8 justify-center">
-              <div
-                class="flex pl-0 md:px-20 lg:px-32 gap-6 flex-row items-center"
-              >
-                <img class="ts-icons" src="{gmail}" alt="E-mail" />
-                <div>
-                  <h6 class="text-black h3 text-md pt-4 text-left">Location</h6>
-                  <p class="text-black h3 text-md pt-4 text-left">
-                    Berlin, Germany
-                  </p>
+          <br />
+          <div class="flex flex-row">
+            <div class="w-12 md:w-20 lg:w-24"></div>
+            <div
+              class="pt-12 flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-start md:justify-center lg:justify-center xl:justify-center 2xl:justify-center gap-6 md:gap-20 lg:gap-40 xl:gap-60 2xl:gap-96"
+            >
+              <div class="flex gap-8">
+                <div class="flex pl-0 gap-6 flex-row items-center">
+                  <img
+                    class="ts-icons"
+                    src="./assets/icons/pin.png"
+                    alt="Location"
+                  />
+                  <div>
+                    <h6
+                      class="text-black h3 text-md pt-4 text-left font-semibold"
+                    >
+                      Location
+                    </h6>
+                    <p class="text-black h3 text-md pt-4 text-left">
+                      Berlin, Germany
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="flex gap-8">
+                <div class="flex gap-6 flex-row items-center">
+                  <img
+                    class="ts-icons"
+                    src="./assets/icons/gmail.png"
+                    alt="E-mail"
+                  />
+                  <div>
+                    <h6
+                      class="text-black h3 text-md pt-4 text-left font-semibold"
+                    >
+                      Mail
+                    </h6>
+                    <p class="text-black h3 text-md pt-4 text-left">
+                      yagopb@gmail.com
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="flex gap-8 justify-center">
-              <div class="flex gap-6 flex-row items-center">
-                <img class="ts-icons" src="{pin}" alt="Location" />
-                <div>
-                  <h6 class="text-black h3 text-md pt-4 text-left">Mail</h6>
-                  <p class="text-black h3 text-md pt-4 text-left">
-                    yagopb@gmail.com
-                  </p>
-                </div>
-              </div>
-            </div>
+            <div class="w-12 md:w-20 lg:w-24"></div>
           </div>
         </div>
       </section>
@@ -205,10 +257,18 @@
         </h4>
         <div class="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
           <a href="http://www.linkedin.com/in/yagopb">
-            <img class="ts-icons" src="{link}" alt="" />
+            <img
+              class="ts-icons"
+              src="./assets/icons/icons8-linkedin-96.png"
+              alt="linkedin"
+            />
           </a>
           <a href="http://github.com/Pletus">
-            <img class="ts-icons" src="{git}" alt="github" />
+            <img
+              class="ts-icons"
+              src="./assets/icons/icons8-github-96.png"
+              alt="github"
+            />
           </a>
         </div>
       </section>
