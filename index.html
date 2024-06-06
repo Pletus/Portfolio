@@ -12,28 +12,51 @@
       rel="stylesheet"
     />
     <title>Yago Pazos</title>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </head>
-  <body>
+  <body class="about">
     <div class="flex flex-col">
       <nav
-        class="flex nav justify-between bg-white p-4 md:p-6 lg:p-6 items-center"
+        class="md:flex md:items-center nav md:justify-between bg-white p-4 md:p-6 lg:p-6 items-center relative"
       >
-        <h4
-          class="logo text-xl md:text-3xl lg:text-3xl pl-2 md:pl-6 lg:pl-8 xl:pl-12 2xl:pl-20 font-medium"
-        >
-          Yago Pazos
-        </h4>
-        <div
-          class="flex align-middle gap-4 md:gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 pr-2 md:pr-6 lg:pr-8 xl:pr-12 2xl:pr-20"
-        >
-          <a class="navlinks nav-item" href="/Portfolio"> home </a>
-          <a class="navlinks nav-item" href="#about"> about </a>
-          <a class="navlinks nav-item" href="#projects"> projects </a>
-          <a class="navlinks nav-item" href="#contact"> contact </a>
+        <div class="flex justify-between items-center">
+          <span>
+            <h4
+              class="logo text-xl md:text-3xl lg:text-3xl pl-2 md:pl-6 lg:pl-8 xl:pl-12 2xl:pl-20 font-medium"
+            >
+              Yago Pazos
+            </h4>
+          </span>
+          <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          </span>
         </div>
+        <ul
+          class="md:flex md:items-center w-full md:w-auto md:py-0 md:pl-0 pl-1 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500 left-0 z-[-1] md:z-auto md:static bg-white absolute align-middle gap-4 md:gap-8 lg:gap-16 xl:gap-24 2xl:gap-40 md:pr-6 lg:pr-8 xl:pr-12 2xl:pr-20"
+        >
+          <li class="my-6 md:my-0 mx-4">
+            <a class="navlinks" href="/Portfolio"> home </a>
+          </li>
+          <li class="my-6 md:my-0 mx-4">
+            <a class="navlinks" href="#about"> about </a>
+          </li>
+          <li class="my-6 md:my-0 mx-4">
+            <a class="navlinks" href="#projects"> projects </a>
+          </li>
+          <li class="my-6 md:my-0 mx-4">
+            <a class="navlinks" href="#contact"> contact </a>
+          </li>
+        </ul>
       </nav>
       <section
-        class="w-full about flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 pt-12 md:p-20 lg:p-40 xl:px-80 2xl:px-96 justify-center"
+        class="w-full flex flex-col md:flex-col lg:flex-col xl:flex-col p-4 pt-12 md:p-20 lg:p-40 xl:px-80 2xl:px-96 justify-center"
       >
         <div
           class="flex flex-col-reverse md:flex-row lg:flex-row gap-2 md:gap-0 lg:gap-0"
@@ -73,44 +96,48 @@
         >
           <div class="flex gap-4 lg:gap-8 md:gap-8">
             <img
-              class="ts-icons hover:"
+              class="ts-icons duration-500"
               src="./assets/icons/html-5-svgrepo-com.svg"
               alt="HTML"
             />
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
               src="./assets/icons/css-3-svgrepo-com.svg"
               alt="CSS"
             />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
               src="./assets/icons/javascript-svgrepo-com.svg"
               alt="JavaScript"
             />
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
               src="./assets/icons/react-svgrepo-com.svg"
               alt="React"
             />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
-            <img class="ts-icons" src="./assets/icons/Node.js.svg" alt="Node" />
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
+              src="./assets/icons/Node.js.svg"
+              alt="Node"
+            />
+            <img
+              class="ts-icons duration-500"
               src="./assets/icons/Express.svg"
               alt="Express"
             />
           </div>
           <div class="flex gap-4 lg:gap-8 md:gap-8">
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
               src="./assets/icons/tailwind-svgrepo-com.svg"
               alt="Tailwind"
             />
             <img
-              class="ts-icons"
+              class="ts-icons duration-500"
               src="./assets/icons/mongodb-svgrepo-com.svg"
               alt="MongoDB"
             />
@@ -122,7 +149,9 @@
         id="about"
         class="bg-white flex flex-col md:flex-row lg:flex-row p-12 lg:p-40 md:p-20 xl:px-80 2xl:px-96 pb-2 sm:pb-4 w-full"
       >
-        <div class="flex flex-col justify-center md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2">
+        <div
+          class="flex flex-col justify-center md:w-1/2 lg:w-1/2 xl:w-1/2 2xl:w-1/2"
+        >
           <h5
             class="text-blue-600/100 text-black h3 text-4xl pt-4 pl-0 md:pl-2 lg:pl-3 text-center md:text-left lg:text-left"
           >
@@ -207,7 +236,7 @@
               <div class="flex gap-8">
                 <div class="flex pl-0 gap-6 flex-row items-center">
                   <img
-                    class="ts-icons"
+                    class="ts-icons duration-700"
                     src="./assets/icons/pin.png"
                     alt="Location"
                   />
@@ -226,7 +255,7 @@
               <div class="flex gap-8">
                 <div class="flex gap-6 flex-row items-center">
                   <img
-                    class="ts-icons"
+                    class="ts-icons duration-700"
                     src="./assets/icons/gmail.png"
                     alt="E-mail"
                   />
@@ -258,14 +287,14 @@
         <div class="flex gap-6 lg:gap-12 xl:gap-16 2xl:gap-32 justify-evenly">
           <a href="http://www.linkedin.com/in/yagopb">
             <img
-              class="ts-icons"
+              class="ts-icons duration-700"
               src="./assets/icons/icons8-linkedin-96.png"
               alt="linkedin"
             />
           </a>
           <a href="http://github.com/Pletus">
             <img
-              class="ts-icons"
+              class="ts-icons duration-700"
               src="./assets/icons/icons8-github-96.png"
               alt="github"
             />
@@ -273,5 +302,14 @@
         </div>
       </section>
     </div>
+    <script>
+      function Menu(e) {
+        let list = document.querySelector("ul");
+
+        e.name === "menu"
+          ? ((e.name = "close"), list.classList.add("top-[80px]"), list.classList.add('opacity-100'))
+          : ((e.name = "menu"), list.classList.remove("top-[80px]"), list.classList.remove('opacity-100'));
+      }
+    </script>
   </body>
 </html>
