@@ -22,6 +22,27 @@
   font-size: large;
 }
 
+.img-responsive {
+  width: 100%;         /* La imagen se ajusta al 100% del ancho del contenedor */
+  height: auto;        /* Mantiene la proporción de la imagen */
+  max-width: 100%;     /* No excede el 100% del contenedor */
+  object-fit: cover;   /* Mantiene la imagen bien encajada */
+  border-radius: 8px;  /* Opcional: bordes redondeados */
+  transition: all 0.3s ease; /* Transición suave al redimensionar */
+}
+
+@media (min-width: 768px) {
+  .img-responsive {
+    max-width: 75%; /* Límite de ancho en pantallas medianas */
+  }
+}
+
+@media (min-width: 1024px) {
+  .img-responsive {
+    max-width: 90%; /* Límite de ancho en pantallas grandes */
+  }
+}
+
 .complex-shadow {
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5),
               inset 0 -1px 1px #000000;
